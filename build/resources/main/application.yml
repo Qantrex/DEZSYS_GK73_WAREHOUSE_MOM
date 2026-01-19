@@ -1,0 +1,22 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      auto-offset-reset: earliest
+      properties:
+        isolation.level: read_committed
+    listener:
+      missing-topics-fatal: false
+
+app:
+  role: warehouse              # central | warehouse
+  warehouse-id: linz           # nur relevant für role=warehouse
+  warehouse-ids: [linz, wien, noe]  # relevant für central (Topic-Setup)
+  topics:
+    ack: warehouse.ack
+    stock-template: "warehouse.%s.stock"
+    stock-pattern: 'warehouse\..*\.stock'
+
+logging:
+  level:
+    root: INFO

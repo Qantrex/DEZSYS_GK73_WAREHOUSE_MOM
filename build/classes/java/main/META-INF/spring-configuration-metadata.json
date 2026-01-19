@@ -1,0 +1,53 @@
+{
+  "groups": [
+    {
+      "name": "app",
+      "type": "com.example.demo.config.AppProperties",
+      "sourceType": "com.example.demo.config.AppProperties"
+    },
+    {
+      "name": "app.topics",
+      "type": "com.example.demo.config.AppProperties$Topics",
+      "sourceType": "com.example.demo.config.AppProperties",
+      "sourceMethod": "getTopics()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.role",
+      "type": "java.lang.String",
+      "sourceType": "com.example.demo.config.AppProperties",
+      "defaultValue": "warehouse"
+    },
+    {
+      "name": "app.topics.ack",
+      "type": "java.lang.String",
+      "sourceType": "com.example.demo.config.AppProperties$Topics",
+      "defaultValue": "warehouse.ack"
+    },
+    {
+      "name": "app.topics.stock-pattern",
+      "type": "java.lang.String",
+      "sourceType": "com.example.demo.config.AppProperties$Topics",
+      "defaultValue": "warehouse\\..*\\.stock"
+    },
+    {
+      "name": "app.topics.stock-template",
+      "type": "java.lang.String",
+      "sourceType": "com.example.demo.config.AppProperties$Topics",
+      "defaultValue": "warehouse.%s.stock"
+    },
+    {
+      "name": "app.warehouse-id",
+      "type": "java.lang.String",
+      "sourceType": "com.example.demo.config.AppProperties",
+      "defaultValue": "linz"
+    },
+    {
+      "name": "app.warehouse-ids",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.example.demo.config.AppProperties"
+    }
+  ],
+  "hints": []
+}
