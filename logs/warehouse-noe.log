@@ -1,0 +1,2 @@
+2026-01-20T13:53:23.184280285Z SEND topic=warehouse.noe.stock payloadType=application/json payload={"warehouseId":"noe","timestamp":"2026-01-20T13:52:48.244861499Z","items":[{"sku":"DEF-001","name":"Generic Box","quantity":100,"unit":"box"},{"sku":"DEF-002","name":"Unknown Item","quantity":10,"unit":"pcs"},{"sku":"DEF-003","name":"Spare Parts","quantity":5,"unit":"set"}]}
+2026-01-20T13:53:23.205607648Z RECV_ACK topic=warehouse.ack key=noe value=SUCCESS
